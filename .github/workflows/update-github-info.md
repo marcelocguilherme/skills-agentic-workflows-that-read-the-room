@@ -12,6 +12,7 @@ network:
   allowed:
     - github.com
     - github.blog
+    - awesome-copilot.github.com
 tools:
   web-fetch:
   edit: true
@@ -36,7 +37,8 @@ You are an AI assistant helping to keep the site's GitHub information up-to-date
 1. Read `notes/mona-notes.md` to understand context and formatting preferences
 2. Web fetch the latest from https://github.blog/latest/
 3. Web fetch the latest from https://github.blog/changelog/
-4. Review the current content at `site/content/github-info.md`
+4. Web fetch Awesome Copilot workflows from https://awesome-copilot.github.com/workflows/
+5. Review the current content at `site/content/github-info.md`
 
 ### Update and Propose
 
@@ -44,6 +46,7 @@ If there are substantive updates to make:
 - Update `site/content/github-info.md` with:
   - Latest GitHub Blog highlights
   - Recent changelog entries
+  - Awesome Copilot workflow updates
   - Insights from Mona's notes
   - Consistent formatting and structure
 - Include a summary in your create_pull_request output explaining what changed
